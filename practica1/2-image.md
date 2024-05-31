@@ -7,7 +7,6 @@ Es un archivo único que contiene todos los programas, librerías, dependencias 
 
 
 ## ¿Cuál es la relación entre una imagen y un contenedor? 
-# COMPLETAR 
 Una imagen es una plantilla de solo lectura con las instrucciones necesarias para crear un contenedor. Un contenedor es una instancia en ejecución de una imagen, que incluye todas las dependencias y configuraciones definidas en la imagen.
 
 ![Imagen y contenedores](imagenes/imagenYcontenedores.JPG)
@@ -28,9 +27,9 @@ docker pull <nombre imagen>:<tag>
 ```
 
 Descargar la imagen **hello-world**
-# COMPLETAR
 Se ejecuta el comando
 docker pull hello-world
+
 ![alt text](imagenes/hello-world.jpg)
 
 
@@ -39,12 +38,11 @@ docker pull hello-world
 
 
 **¿Qué es nginx**
-# COMPLETAR 
 Nginx es un servidor web de código abierto que también puede funcionar como un servidor proxy inverso, balanceador de carga, y más. Es conocido por su alto rendimiento y estabilidad.
 
 Descargar la imagen  **nginx** en la versión **alpine**
-# COMPLETAR
 docker pull nginx:alpine
+
 ![alt text](imagenes/nginx.jpg)
 
 
@@ -55,7 +53,7 @@ docker images
 
 ![alt text](imagenes/listar.jpg)
 
-# COLOCAR UNA CAPTURA DE PANTALLA DEL RESULTADO 
+
 
 **Identificadores**
 En Docker, se utilizan varios identificadores para diferenciar de manera única los elementos del sistema, como imágenes, contenedores, volúmenes y redes. Estos identificadores son generados automáticamente por Docker y son únicos dentro del contexto del sistema Docker en el que se encuentran. 
@@ -69,9 +67,10 @@ docker inspect <nombre imagen>:<tag>
 ```
 
 Inspeccionar la imagen hello-world 
-# COMPLETAR
 docker inspect hello-world
+
 ![alt text](imagenes/inspect-hello-world.jpg)
+
 ![alt text](imagenes/inspect-hello-world2.jpg)
 
 ![alt text](imagenes/inspect-hello-world3.jpg)
@@ -79,7 +78,6 @@ docker inspect hello-world
 
 
 **¿Con qué algoritmo se está generando el ID de la imagen**
-# COMPLETAR
 Docker utiliza el algoritmo SHA256 para generar los IDs de las imágenes.
 
 ### Filtrar imágenes
@@ -99,6 +97,7 @@ docker rmi <nombre imagen>:<tag>
 Eliminar la imagen hello-world 
 # 
 docker rmi hello-world
+
 ![alt text](imagenes/eliminar-hello.jpg)
 
 
